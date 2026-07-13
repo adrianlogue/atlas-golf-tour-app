@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en-AU"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>PGA of Atlantica</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Atlantica">
+<meta name="theme-color" content="#0B2440">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/pgaLogo.png">
+<link rel="apple-touch-icon" href="assets/pgaLogo.png">
+<script>window.__resources = {"pgaLogo":"assets/pgaLogo.png"};</script>
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/84455683.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/7ac28054.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/f98afd9f.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/ba2ac0a6.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/d1770cbb.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/4211324f.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/2dd5709b.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/5cc2dad6.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/121701db.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/3d0a4414.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/954cada5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/f6bcdd70.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/2dd5709b.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/5cc2dad6.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/121701db.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/3d0a4414.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/954cada5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/f6bcdd70.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/2dd5709b.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/5cc2dad6.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/121701db.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/3d0a4414.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/954cada5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/f6bcdd70.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/2dd5709b.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/5cc2dad6.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/121701db.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/3d0a4414.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/954cada5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/f6bcdd70.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  :root {
+    --ui: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+
+    --ink: #0B2440;          /* deep Atlantic navy chrome */
+    --ink-700: #123055;
+    --brand: #10457F;        /* primary — brand blue */
+    --brand-600: #1A5CA3;
+    --brand-tint: #E3EBF5;
+    --brand-tint-2: #CFDEEE;
+    --cream: #F6F3EB;        /* warm app surface */
+    --cream-2: #F0EBDF;
+    --card: #FFFFFF;
+    --text: #16201A;
+    --muted: #5B6962;
+    --muted-2: #8C968E;
+    --border: #E7E2D6;
+    --border-strong: #D9D3C4;
+    --divider: #EFEBE0;
+    --gold: #C39A4E;
+    --gold-deep: #9F7C32;
+    --gold-tint: #F4EAD4;
+
+    --under: #0B7A3B;        /* under par / position up */
+    --over: #C2462F;         /* over par / position down */
+    --even: #2A3630;
+    --live: #D6332A;
+
+    --r-sm: 8px; --r-md: 12px; --r-lg: 18px; --r-xl: 26px;
+    --shadow-card: 0 1px 2px rgba(20,30,22,.04), 0 6px 18px rgba(20,30,22,.06);
+    --shadow-float: 0 10px 40px rgba(7,25,45,.18);
+  }
+
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font-family: var(--ui);
+    background:
+      radial-gradient(120% 80% at 50% -10%, #0d3a66 0%, #0a2c50 55%, #071f3a 100%);
+    color: var(--text);
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- Presentation stage ---------- */
+  #stage {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #scaler { transform-origin: center center; }
+
+  .phone {
+    position: relative;
+    width: 393px; height: 852px;
+    background: #000;
+    border-radius: 56px;
+    padding: 5px;
+    box-shadow:
+      0 0 0 5px #15140f,
+      0 0 0 7px #2c2a20,
+      var(--shadow-float),
+      0 40px 90px rgba(0,0,0,.45);
+  }
+  .phone-screen {
+    position: relative;
+    width: 100%; height: 100%;
+    background: var(--cream);
+    border-radius: 51px;
+    overflow: hidden;
+  }
+
+  /* Dynamic island */
+  .island {
+    position: absolute; top: 11px; left: 50%; transform: translateX(-50%);
+    width: 124px; height: 36px; background: #000; border-radius: 20px;
+    z-index: 1200; pointer-events: none;
+  }
+
+  /* status bar */
+  .statusbar {
+    position: absolute; top: 0; left: 0; right: 0; height: 54px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 30px 0; z-index: 900; pointer-events: none;
+    font-weight: 600; font-size: 15px; letter-spacing: .2px;
+  }
+  .statusbar .sb-right { display: flex; align-items: center; gap: 7px; }
+
+  /* app root area */
+  .app-root { position: absolute; inset: 0; overflow: hidden; }
+
+  /* nav layers */
+  .nav-layer {
+    position: absolute; inset: 0;
+    background: var(--cream);
+    display: flex; flex-direction: column;
+    will-change: transform;
+  }
+  .nav-layer.push-enter { transform: translateX(100%); }
+  .nav-layer.push-enter-active { transform: translateX(0); transition: transform .34s cubic-bezier(.32,.72,0,1); }
+  .nav-layer.push-exit { transform: translateX(0); }
+  .nav-layer.push-exit-active { transform: translateX(100%); transition: transform .3s cubic-bezier(.32,.72,0,1); }
+
+  .scroll {
+    flex: 1; overflow-y: auto; overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+  .scroll::-webkit-scrollbar { width: 0; height: 0; }
+
+  /* generic */
+  .card {
+    background: var(--card); border-radius: var(--r-lg);
+    box-shadow: var(--shadow-card); border: 1px solid var(--border);
+  }
+  .row-press { cursor: pointer; transition: background .12s; }
+  .row-press:active { background: var(--cream-2); }
+
+  .tabbar {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 800;
+    height: 86px; padding-bottom: 22px;
+    background: rgba(246,243,235,.86);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-top: 1px solid var(--border);
+    display: flex;
+  }
+  .tab {
+    flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 4px; cursor: pointer; color: var(--muted-2);
+    font-size: 10.5px; font-weight: 600; letter-spacing: .1px;
+    transition: color .15s;
+  }
+  .tab.active { color: var(--brand); }
+
+  .home-indicator {
+    position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+    width: 134px; height: 5px; border-radius: 3px; background: #16201A; opacity: .9;
+    z-index: 1000; pointer-events: none;
+  }
+
+  /* sheets */
+  .sheet-scrim {
+    position: absolute; inset: 0; z-index: 1000;
+    background: rgba(6,18,32,0); transition: background .3s;
+  }
+  .sheet-scrim.show { background: rgba(6,18,32,.5); }
+  .sheet {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 1001;
+    background: var(--cream); border-radius: 26px 26px 0 0;
+    transform: translateY(100%); transition: transform .42s cubic-bezier(.32,.72,0,1);
+    box-shadow: 0 -10px 40px rgba(0,0,0,.2);
+    max-height: 92%; display: flex; flex-direction: column;
+  }
+  .sheet.show { transform: translateY(0); }
+  .sheet-handle { width: 38px; height: 5px; border-radius: 3px; background: var(--border-strong); margin: 10px auto 4px; flex: 0 0 auto; }
+
+  .toast {
+    position: absolute; left: 16px; right: 16px; bottom: 104px; z-index: 1300;
+    background: var(--ink); color: #fff; border-radius: 14px;
+    padding: 13px 16px; font-size: 13.5px; font-weight: 500;
+    box-shadow: var(--shadow-float);
+    opacity: 0; transform: translateY(10px); transition: opacity .25s, transform .25s;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .toast.show { opacity: 1; transform: translateY(0); }
+
+  /* spinner ring (pull to refresh) */
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes shimmer { 0% { background-position: -200px 0; } 100% { background-position: 200px 0; } }
+  .skel {
+    background: linear-gradient(90deg, #eceae1 25%, #f4f2ea 37%, #eceae1 63%);
+    background-size: 400px 100%; animation: shimmer 1.3s infinite linear;
+    border-radius: 6px;
+  }
+
+  @keyframes fadeUp { from { transform: translateY(10px); } to { transform: translateY(0); } }
+  .fade-up { animation: fadeUp .42s cubic-bezier(.32,.72,0,1) both; }
+
+  /* hero image placeholder */
+  .img-ph {
+    background-color: #16324e;
+    background-image:
+      repeating-linear-gradient(135deg, rgba(255,255,255,.05) 0 10px, rgba(255,255,255,0) 10px 20px);
+    color: rgba(255,255,255,.5); font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px; letter-spacing: .5px;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+  }
+
+  /* ---------- Control rail (prototype scaffolding) ---------- */
+  #rail {
+    position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%);
+    z-index: 50; display: flex; gap: 6px; align-items: center;
+    background: rgba(6,22,40,.7); backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,.14); border-radius: 999px;
+    padding: 7px 8px; box-shadow: var(--shadow-float);
+    transition: opacity .3s, transform .3s;
+  }
+  #rail.hidden { opacity: 0; transform: translateX(-50%) translateY(20px); pointer-events: none; }
+  .rail-btn {
+    border: 0; background: transparent; color: rgba(255,255,255,.82);
+    font-family: var(--ui); font-size: 12.5px; font-weight: 600; letter-spacing: .2px;
+    padding: 8px 13px; border-radius: 999px; cursor: pointer; white-space: nowrap;
+    display: flex; align-items: center; gap: 6px; transition: background .15s, color .15s;
+  }
+  .rail-btn:hover { background: rgba(255,255,255,.1); color: #fff; }
+  .rail-btn.solid { background: var(--gold); color: #2a2008; }
+  .rail-btn.solid:hover { background: #d3aa5c; }
+  .rail-sep { width: 1px; height: 22px; background: rgba(255,255,255,.16); margin: 0 2px; }
+
+  #railShow {
+    position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%);
+    z-index: 49; opacity: 0; pointer-events: none; transition: opacity .3s;
+    background: rgba(6,22,40,.7); color: rgba(255,255,255,.8); border: 1px solid rgba(255,255,255,.14);
+    border-radius: 999px; padding: 7px 14px; font-family: var(--ui); font-size: 12px; cursor: pointer;
+  }
+  #railShow.show { opacity: 1; pointer-events: auto; }
+
+  /* jump menu */
+  #jump {
+    position: fixed; left: 50%; bottom: 78px; transform: translateX(-50%) translateY(10px);
+    z-index: 60; background: #0c2743; border: 1px solid rgba(255,255,255,.14);
+    border-radius: 16px; padding: 8px; width: 320px; max-height: 60vh; overflow-y: auto;
+    box-shadow: var(--shadow-float); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s;
+  }
+  #jump.show { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+  .jump-group { color: rgba(255,255,255,.4); font-size: 10px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; padding: 10px 10px 5px; }
+  .jump-item { color: rgba(255,255,255,.88); font-size: 13px; padding: 9px 11px; border-radius: 9px; cursor: pointer; display: flex; align-items: center; gap: 9px; }
+  .jump-item:hover { background: rgba(255,255,255,.08); }
+  #jump::-webkit-scrollbar { width: 8px; } #jump::-webkit-scrollbar-thumb { background: rgba(255,255,255,.2); border-radius: 4px; }
+
+  /* overlay views (live activity / style guide) */
+  .overlay-view {
+    position: fixed; inset: 0; z-index: 70; overflow-y: auto;
+    background: radial-gradient(120% 80% at 50% -10%, #0d3a66 0%, #0a2c50 55%, #071f3a 100%);
+    display: none;
+  }
+  .overlay-view.show { display: block; }
+  .overlay-close {
+    position: fixed; top: 20px; right: 22px; z-index: 80;
+    background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); color: #fff;
+    width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 20px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .overlay-close:hover { background: rgba(255,255,255,.2); }
+
+  .tabnums { font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1; }
+</style>
+<style>
+  /* ---- standalone presentation (replaces the design-canvas staging) ---- */
+  html { touch-action: manipulation; }
+  body {
+    background: #ECE8DD;
+    -webkit-user-select: none; user-select: none;
+    -webkit-touch-callout: none;
+  }
+  input, textarea { -webkit-user-select: text; user-select: text; }
+
+  #frame { position: fixed; inset: 0; background: var(--cream); overflow: hidden; }
+
+  /* Prototype scaffolding (screen-jump rail, overlays) stays wired but hidden.
+     Append ?controls to the URL to bring it back. */
+  body:not(.show-controls) #rail,
+  body:not(.show-controls) #railShow,
+  body:not(.show-controls) #jump { display: none !important; }
+
+  /* Wide screens: a plain phone-sized column, no bezel. */
+  @media (min-width: 560px) and (min-height: 700px) {
+    #frame {
+      inset: auto; position: fixed; left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+      width: 393px; height: min(852px, calc(100dvh - 48px));
+      border-radius: 28px; border: 1px solid rgba(20, 30, 22, .1);
+      box-shadow: 0 24px 70px rgba(20, 30, 22, .22);
+    }
+  }
+
+  /* Real devices: the phone provides the status bar and home indicator.
+     iOS 26.1 letterboxes installed web apps top and bottom, painting the
+     reserved strips with the page background — match it to the app surface
+     so they read as part of the app. */
+  @media (max-width: 559.98px), (max-height: 699.98px) {
+    html, body { background: var(--cream); }
+    .statusbar { display: none !important; }
+    .tabbar {
+      height: calc(64px + max(22px, env(safe-area-inset-bottom)));
+      padding-bottom: max(22px, env(safe-area-inset-bottom));
+    }
+    .toast { bottom: calc(82px + max(22px, env(safe-area-inset-bottom))); }
+    .sheet { padding-bottom: env(safe-area-inset-bottom); }
+  }
+</style>
+</head>
+<body>
+  <div id="frame">
+    <div id="app-root" class="app-root"></div>
+  </div>
+
+  <!-- prototype control rail -->
+  <div id="rail">
+    <button class="rail-btn" id="btnJump">⌗ Screens</button>
+    <div class="rail-sep"></div>
+    <button class="rail-btn" id="btnLive">◷ Live Activity</button>
+    <button class="rail-btn" id="btnStyle">◆ Style guide</button>
+    <div class="rail-sep"></div>
+    <button class="rail-btn" id="btnReset">↺ Restart</button>
+    <button class="rail-btn" id="btnHide" title="Presentation mode">⤢</button>
+  </div>
+  <button id="railShow">Show controls</button>
+  <div id="jump"></div>
+
+  <div id="liveView" class="overlay-view"></div>
+  <div id="styleView" class="overlay-view"></div>
+
+  <!-- thumbnail for bundler -->
+  
+
+  <script src="assets/react.js"></script>
+  <script src="assets/react-dom.js"></script>
+  <script src="assets/babel.js"></script>
+
+  <script src="assets/pga-of-atlantica-prototype-sample-data.js"></script>
+  <script src="assets/pga-of-atlantica-extended-data-for-oom-m.js"></script>
+  <script type="text/babel" src="assets/pga-of-atlantica-icon-set-brand-emblem.js"></script>
+  <script type="text/babel" src="assets/pga-of-atlantica-shared-chrome-ui-primit.js"></script>
+  <script type="text/babel" src="assets/pga-of-atlantica-core-screens-welcome-ho.js"></script>
+  <script type="text/babel" src="assets/pga-of-atlantica-schedule-tournament-det.js"></script>
+  <script type="text/babel" src="assets/pga-of-atlantica-rankings-order-of-merit.js"></script>
+  <script type="text/babel" src="assets/pga-of-atlantica-member-portal-my-tourna.js"></script>
+  <script type="text/babel" src="assets/pga-of-atlantica-overlay-views-ios-live-.js"></script>
+  <script type="text/babel" src="assets/pga-of-atlantica-app-shell-navigation-fa.js"></script>
+
+  
+
+
+  <script>if (new URLSearchParams(location.search).has('controls')) document.body.classList.add('show-controls');</script>
+</body></html>
