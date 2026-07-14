@@ -149,7 +149,7 @@
               <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
                 <div style={{ borderBottom: '1px solid #EFEBE0', paddingBottom: 14 }}>
                   <div style={{ fontSize: 10.5, color: '#9F7C32', fontWeight: 700, letterSpacing: .6 }}>EDITORIAL · Source Serif 4</div>
-                  <div style={{ fontFamily: 'var(--serif)', fontSize: 32, fontWeight: 700, color: '#16201A', letterSpacing: -.4, marginTop: 4 }}>Smith eyes a fourth Kirkwood Cup</div>
+                  <div style={{ fontFamily: 'var(--serif)', fontSize: 32, fontWeight: 700, color: '#16201A', letterSpacing: -.4, marginTop: 4 }}>Sutherland eyes a fourth Atherton Cup</div>
                   <div style={{ fontSize: 11.5, color: '#7a857d', marginTop: 4 }}>Hero titles, news headlines, premium moments. Used sparingly.</div>
                 </div>
                 <div>

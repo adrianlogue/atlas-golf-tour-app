@@ -7,40 +7,40 @@
   /* ===================== ORDER OF MERIT (Atlas Golf Tour men's, 2026 season) ===================== */
   // points-based Order of Merit. Exemption bands inserted as cut-off lines in the UI.
   const oomRaw = [
-    { pid: 'p-mwlee',    name: 'Min Woo Lee',    c: 'AUS', points: 2148, earnings: 598200, events: 7, prev: 1 },
-    { pid: 'p-csmith',   name: 'Cameron Smith',  c: 'AUS', points: 1964, earnings: 689400, events: 5, prev: 3 },
-    { pid: 'p-rfox',     name: 'Ryan Fox',       c: 'NZL', points: 1731, earnings: 511000, events: 8, prev: 2 },
-    { pid: 'p-ascott',   name: 'Adam Scott',     c: 'AUS', points: 1542, earnings: 412300, events: 6, prev: 4 },
-    { pid: 'p-jday',     name: 'Jason Day',      c: 'AUS', points: 1488, earnings: 354900, events: 5, prev: 6 },
-    { pid: 'p-cdavis',   name: 'Cameron Davis',  c: 'AUS', points: 1356, earnings: 233700, events: 7, prev: 5 },
-    { pid: 'p-lherbert', name: 'Lucas Herbert',  c: 'AUS', points: 1204, earnings: 287600, events: 6, prev: 9 },
+    { pid: 'p-mwarrick',    name: 'Miles Warrick',    c: 'AUS', points: 2148, earnings: 598200, events: 7, prev: 1 },
+    { pid: 'p-csutherland',   name: 'Cole Sutherland',  c: 'AUS', points: 1964, earnings: 689400, events: 5, prev: 3 },
+    { pid: 'p-rfinch',     name: 'Rory Finch',       c: 'NZL', points: 1731, earnings: 511000, events: 8, prev: 2 },
+    { pid: 'p-astanton',   name: 'Alec Stanton',     c: 'AUS', points: 1542, earnings: 412300, events: 6, prev: 4 },
+    { pid: 'p-jdunmore',     name: 'Jack Dunmore',      c: 'AUS', points: 1488, earnings: 354900, events: 5, prev: 6 },
+    { pid: 'p-cdale',   name: 'Curtis Dale',  c: 'AUS', points: 1356, earnings: 233700, events: 7, prev: 5 },
+    { pid: 'p-lharrow', name: 'Lucas Harrow',  c: 'AUS', points: 1204, earnings: 287600, events: 6, prev: 9 },
     // --- band: DP World Tour cards (top 7) ---
-    { pid: 'p-jmorgan',  name: 'Jed Morgan',     c: 'AUS', points: 1098, earnings: 144200, events: 8, prev: 7 },
-    { pid: 'p-mleishman',name: 'Marc Leishman',  c: 'AUS', points: 1012, earnings: 198400, events: 4, prev: 8 },
-    { pid: 'fill-0',     name: 'David Micheluzzi',c: 'AUS', points: 948,  earnings: 176500, events: 9, prev: 12 },
-    { pid: 'fill-1',     name: 'Elvis Smylie',   c: 'AUS', points: 902,  earnings: 168200, events: 9, prev: 10 },
-    { pid: 'fill-5',     name: 'Kazuma Kobori',  c: 'NZL', points: 864,  earnings: 159800, events: 8, prev: 11 },
-    { pid: 'fill-2',     name: 'Harrison Crowe',  c: 'AUS', points: 791,  earnings: 142300, events: 9, prev: 15 },
-    { pid: 'fill-6',     name: 'Anthony Quayle', c: 'AUS', points: 742,  earnings: 131900, events: 8, prev: 13 },
-    { pid: 'p-bkennedy', name: 'Brad Kennedy',   c: 'AUS', points: 705,  earnings: 96300,  events: 7, prev: 14 },
+    { pid: 'p-jmarsh',  name: 'Jed Marsh',     c: 'AUS', points: 1098, earnings: 144200, events: 8, prev: 7 },
+    { pid: 'p-mleggett',name: 'Mason Leggett',  c: 'AUS', points: 1012, earnings: 198400, events: 4, prev: 8 },
+    { pid: 'fill-0',     name: 'Dean Marchetti',c: 'AUS', points: 948,  earnings: 176500, events: 9, prev: 12 },
+    { pid: 'fill-1',     name: 'Errol Swift',   c: 'AUS', points: 902,  earnings: 168200, events: 9, prev: 10 },
+    { pid: 'fill-5',     name: 'Kaito Mori',  c: 'NZL', points: 864,  earnings: 159800, events: 8, prev: 11 },
+    { pid: 'fill-2',     name: 'Hugo Calder',  c: 'AUS', points: 791,  earnings: 142300, events: 9, prev: 15 },
+    { pid: 'fill-6',     name: 'Ashton Quill', c: 'AUS', points: 742,  earnings: 131900, events: 8, prev: 13 },
+    { pid: 'p-bkane', name: 'Brody Kane',   c: 'AUS', points: 705,  earnings: 96300,  events: 7, prev: 14 },
     // --- band: fully exempt next season (top 15) ---
-    { pid: 'fill-3',     name: 'Jasper Stubbs',  c: 'AUS', points: 648,  earnings: 118400, events: 9, prev: 18 },
-    { pid: 'fill-10',    name: 'Tom Power Horan',c: 'AUS', points: 602,  earnings: 109200, events: 8, prev: 16 },
-    { pid: 'p-adodt',    name: 'Andrew Dodt',    c: 'AUS', points: 559,  earnings: 88100,  events: 7, prev: 17 },
-    { pid: 'fill-15',    name: 'Matt Griffin',   c: 'AUS', points: 511,  earnings: 94600,  events: 8, prev: 20 },
-    { pid: 'fill-20',    name: 'Dimitrios Papadatos', c: 'AUS', points: 478, earnings: 88700, events: 9, prev: 19 },
+    { pid: 'fill-3',     name: 'Jasper Steele',  c: 'AUS', points: 648,  earnings: 118400, events: 9, prev: 18 },
+    { pid: 'fill-10',    name: 'Tom Pemberton',c: 'AUS', points: 602,  earnings: 109200, events: 8, prev: 16 },
+    { pid: 'p-adrake',    name: 'Angus Drake',    c: 'AUS', points: 559,  earnings: 88100,  events: 7, prev: 17 },
+    { pid: 'fill-15',    name: 'Matt Greaves',   c: 'AUS', points: 511,  earnings: 94600,  events: 8, prev: 20 },
+    { pid: 'fill-20',    name: 'Dimitri Poulos', c: 'AUS', points: 478, earnings: 88700, events: 9, prev: 19 },
     // member sits here
     { pid: 'me',         name: 'Liam Carter',    c: 'AUS', points: 442,  earnings: 81200,  events: 8, prev: 24, isMe: true },
-    { pid: 'fill-12',    name: 'Aaron Pike',     c: 'AUS', points: 418,  earnings: 79300,  events: 7, prev: 21 },
-    { pid: 'fill-17',    name: 'Travis Smyth',   c: 'AUS', points: 389,  earnings: 71800,  events: 8, prev: 22 },
-    { pid: 'p-brumford', name: 'Brett Rumford',  c: 'AUS', points: 362,  earnings: 71200,  events: 6, prev: 23 },
-    { pid: 'fill-22',    name: 'Hayden Hopewell', c: 'AUS', points: 331, earnings: 64900,  events: 9, prev: 27 },
+    { pid: 'fill-12',    name: 'Aaron Prescott',     c: 'AUS', points: 418,  earnings: 79300,  events: 7, prev: 21 },
+    { pid: 'fill-17',    name: 'Travis Sharp',   c: 'AUS', points: 389,  earnings: 71800,  events: 8, prev: 22 },
+    { pid: 'p-brutherford', name: 'Blake Rutherford',  c: 'AUS', points: 362,  earnings: 71200,  events: 6, prev: 23 },
+    { pid: 'fill-22',    name: 'Hayden Holt', c: 'AUS', points: 331, earnings: 64900,  events: 9, prev: 27 },
     // --- band: retain partial status (top 30) ---
-    { pid: 'fill-13',    name: 'Deyen Lawson',   c: 'AUS', points: 298,  earnings: 58200,  events: 8, prev: 25 },
-    { pid: 'fill-14',    name: 'Jordan Doull',   c: 'AUS', points: 274,  earnings: 54100,  events: 7, prev: 26 },
-    { pid: 'fill-18',    name: 'Lachlan Barker', c: 'AUS', points: 251,  earnings: 49800,  events: 8, prev: 29 },
-    { pid: 'fill-19',    name: 'Ben Eccles',     c: 'AUS', points: 229,  earnings: 46300,  events: 7, prev: 28 },
-    { pid: 'fill-23',    name: 'Connor McKinney',c: 'NZL', points: 208,  earnings: 42100,  events: 8, prev: 31 },
+    { pid: 'fill-13',    name: 'Dylan Lowe',   c: 'AUS', points: 298,  earnings: 58200,  events: 8, prev: 25 },
+    { pid: 'fill-14',    name: 'Jordan Deacon',   c: 'AUS', points: 274,  earnings: 54100,  events: 7, prev: 26 },
+    { pid: 'fill-18',    name: 'Lachlan Byrne', c: 'AUS', points: 251,  earnings: 49800,  events: 8, prev: 29 },
+    { pid: 'fill-19',    name: 'Ben Ellery',     c: 'AUS', points: 229,  earnings: 46300,  events: 7, prev: 28 },
+    { pid: 'fill-23',    name: 'Connor Macrae',c: 'NZL', points: 208,  earnings: 42100,  events: 8, prev: 31 },
   ];
 
   // exemption bands: show a cut-off line AFTER the given (1-based) rank
@@ -164,8 +164,8 @@
   /* ===================== NOTIFICATIONS ===================== */
   // fan notifications
   const fanNotifications = [
-    { id: 'n1', icon: 'Trophy', tone: 'live', title: 'Cameron Smith leads the Atlantica PGA', body: '−12 through 14 in Round 3', when: '2m ago', unread: true },
-    { id: 'n2', icon: 'Star', tone: 'green', title: 'Min Woo Lee made the turn at −2 today', body: 'Following · Round 3 at Royal Queensland', when: '18m ago', unread: true },
+    { id: 'n1', icon: 'Trophy', tone: 'live', title: 'Cole Sutherland leads the Atlantica PGA', body: '−12 through 14 in Round 3', when: '2m ago', unread: true },
+    { id: 'n2', icon: 'Star', tone: 'green', title: 'Miles Warrick made the turn at −2 today', body: 'Following · Round 3 at Royal Queensland', when: '18m ago', unread: true },
     { id: 'n3', icon: 'Flag', tone: 'green', title: 'Round 3 tee times published', body: 'Atlantica PGA Championship', when: '3h ago', unread: false },
     { id: 'n4', icon: 'Calendar', tone: 'muted', title: 'ISPS HANDA Atlantica Open tees off in 3 weeks', body: 'Add it to your calendar', when: 'Yesterday', unread: false },
   ];
@@ -180,13 +180,13 @@
   /* ===================== PAST CHAMPIONS (event pages) ===================== */
   const pastChampions = {
     't-atlpga': [
-      { year: '2025', name: 'Min Woo Lee', score: '−18' }, { year: '2024', name: 'Elvis Smylie', score: '−14' },
-      { year: '2023', name: 'Min Woo Lee', score: '−9' }, { year: '2022', name: 'Jed Morgan', score: '−20' },
-      { year: '2021', name: 'Jediah Morgan', score: '−11' },
+      { year: '2025', name: 'Miles Warrick', score: '−18' }, { year: '2024', name: 'Errol Swift', score: '−14' },
+      { year: '2023', name: 'Miles Warrick', score: '−9' }, { year: '2022', name: 'Jed Marsh', score: '−20' },
+      { year: '2021', name: 'Jediah Marsh', score: '−11' },
     ],
     't-atlopen': [
-      { year: '2025', name: 'Ryan Fox', score: '−16' }, { year: '2024', name: 'Jason Day', score: '−8' },
-      { year: '2023', name: 'Joaquín Niemann', score: '−24' }, { year: '2022', name: 'Adrian Meronk', score: '−14' },
+      { year: '2025', name: 'Rory Finch', score: '−16' }, { year: '2024', name: 'Jack Dunmore', score: '−8' },
+      { year: '2023', name: 'Tomás Herrera', score: '−24' }, { year: '2022', name: 'Stefan Kowalski', score: '−14' },
     ],
   };
 

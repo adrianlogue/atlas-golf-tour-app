@@ -10,14 +10,14 @@
 
   // women's tour live board (Brookwater) — kept beside the men's board in data.js
   const CLOVER_BOARD = [
-    { playerId: 'p-hgreen', name: 'Hannah Green', country: 'AUS', flag: '🇦🇺', position: '1', scoreToPar: -11, today: -3, thru: 13, totalStrokes: 205, positionChange: +1, status: 'in_progress' },
-    { playerId: 'p-mjlee', name: 'Minjee Lee', country: 'AUS', flag: '🇦🇺', position: '2', scoreToPar: -9, today: -2, thru: 14, totalStrokes: 207, positionChange: -1, status: 'in_progress' },
-    { playerId: 'p-skyriacou', name: 'Stephanie Kyriacou', country: 'AUS', flag: '🇦🇺', position: 'T3', scoreToPar: -7, today: -4, thru: 'F', totalStrokes: 209, positionChange: +3, status: 'completed' },
-    { playerId: 'p-kdavidson', name: 'Karis Davidson', country: 'AUS', flag: '🇦🇺', position: 'T3', scoreToPar: -7, today: -1, thru: 12, totalStrokes: 209, positionChange: 0, status: 'in_progress' },
-    { playerId: 'wb-5', name: 'Grace Kim', country: 'AUS', flag: '🇦🇺', position: '5', scoreToPar: -6, today: -2, thru: 15, totalStrokes: 210, positionChange: +2, status: 'in_progress' },
-    { playerId: 'wb-6', name: 'Cassie Porter', country: 'AUS', flag: '🇦🇺', position: 'T6', scoreToPar: -5, today: -1, thru: 11, totalStrokes: 211, positionChange: -2, status: 'in_progress' },
-    { playerId: 'wb-7', name: 'Kirsten Rudgeley', country: 'AUS', flag: '🇦🇺', position: 'T6', scoreToPar: -5, today: +1, thru: 'F', totalStrokes: 211, positionChange: -3, status: 'completed' },
-    { playerId: 'wb-8', name: 'Momoka Kobori', country: 'NZL', flag: '🇳🇿', position: '8', scoreToPar: -4, today: -3, thru: 16, totalStrokes: 212, positionChange: +4, status: 'in_progress' },
+    { playerId: 'p-hglenn', name: 'Harper Glenn', country: 'AUS', flag: '🇦🇺', position: '1', scoreToPar: -11, today: -3, thru: 13, totalStrokes: 205, positionChange: +1, status: 'in_progress' },
+    { playerId: 'p-mjung', name: 'Maya Jung', country: 'AUS', flag: '🇦🇺', position: '2', scoreToPar: -9, today: -2, thru: 14, totalStrokes: 207, positionChange: -1, status: 'in_progress' },
+    { playerId: 'p-skalis', name: 'Sienna Kalis', country: 'AUS', flag: '🇦🇺', position: 'T3', scoreToPar: -7, today: -4, thru: 'F', totalStrokes: 209, positionChange: +3, status: 'completed' },
+    { playerId: 'p-kdunn', name: 'Kiara Dunn', country: 'AUS', flag: '🇦🇺', position: 'T3', scoreToPar: -7, today: -1, thru: 12, totalStrokes: 209, positionChange: 0, status: 'in_progress' },
+    { playerId: 'wb-5', name: 'Gemma Cho', country: 'AUS', flag: '🇦🇺', position: '5', scoreToPar: -6, today: -2, thru: 15, totalStrokes: 210, positionChange: +2, status: 'in_progress' },
+    { playerId: 'wb-6', name: 'Chloe Prentice', country: 'AUS', flag: '🇦🇺', position: 'T6', scoreToPar: -5, today: -1, thru: 11, totalStrokes: 211, positionChange: -2, status: 'in_progress' },
+    { playerId: 'wb-7', name: 'Keeley Ross', country: 'AUS', flag: '🇦🇺', position: 'T6', scoreToPar: -5, today: +1, thru: 'F', totalStrokes: 211, positionChange: -3, status: 'completed' },
+    { playerId: 'wb-8', name: 'Mika Sato', country: 'NZL', flag: '🇳🇿', position: '8', scoreToPar: -4, today: -3, thru: 16, totalStrokes: 212, positionChange: +4, status: 'in_progress' },
   ];
 
   function liveTournamentForTour(tourId) {
@@ -189,9 +189,9 @@
 
   function NewsList({ nav }) {
     const items = [
-      { tag: 'Feature', title: 'Smith eyes a fourth Kirkwood Cup as Royal Queensland bares its teeth', meta: '4 min read · Tour staff' },
-      { tag: 'Analysis', title: 'How the Sandbelt swing reshaped the Order of Merit race', meta: '6 min read · Martin Blake' },
-      { tag: 'Interview', title: '“This is home” — Min Woo Lee on the Atlantica summer', meta: '3 min read · Tour staff' },
+      { tag: 'Feature', title: 'Sutherland eyes a fourth Atherton Cup as Royal Queensland bares its teeth', meta: '4 min read · Tour staff' },
+      { tag: 'Analysis', title: 'How the Sandbelt swing reshaped the Order of Merit race', meta: '6 min read · Martin Vale' },
+      { tag: 'Interview', title: '“This is home” — Miles Warrick on the Atlantica summer', meta: '3 min read · Tour staff' },
     ];
     return (
       <div style={{ display: 'flex', flexDirection: 'column' }}>

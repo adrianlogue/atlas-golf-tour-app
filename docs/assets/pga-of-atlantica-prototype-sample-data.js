@@ -68,25 +68,25 @@
   // ---- Players (directory) ----
   // earnings in AUD (season)
   const players = [
-    { id: 'p-ascott',   first: 'Adam',      last: 'Scott',      country: 'AUS', tour: 'atlas', worldRank: 34,  earnings: 412300, turnedPro: 2000, highlights: ['2013 Masters Champion', '14× PGA Tour wins', 'Former World No. 1'] },
-    { id: 'p-csmith',   first: 'Cameron',   last: 'Smith',      country: 'AUS', tour: 'atlas', worldRank: 21,  earnings: 689400, turnedPro: 2013, highlights: ['2022 Open Champion', '2022 Players Champion', '3× Atlantica PGA Champion'] },
-    { id: 'p-jday',     first: 'Jason',     last: 'Day',        country: 'AUS', tour: 'atlas', worldRank: 28,  earnings: 354900, turnedPro: 2006, highlights: ['2015 PGA Champion', 'Former World No. 1', '13× PGA Tour wins'] },
-    { id: 'p-mwlee',    first: 'Min Woo',   last: 'Lee',        country: 'AUS', tour: 'atlas', worldRank: 24,  earnings: 598200, turnedPro: 2019, highlights: ['2021 Scottish Open Champion', '2023 Atlantica PGA Champion', 'Rising star'] },
-    { id: 'p-lherbert', first: 'Lucas',     last: 'Herbert',    country: 'AUS', tour: 'atlas', worldRank: 71,  earnings: 287600, turnedPro: 2015, highlights: ['2021 Irish Open Champion', '2022 PGA Tour winner'] },
-    { id: 'p-rfox',     first: 'Ryan',      last: 'Fox',        country: 'NZL', tour: 'atlas', worldRank: 45,  earnings: 511000, turnedPro: 2010, highlights: ['2× DP World Tour winner (2022)', 'NZ No. 1'] },
-    { id: 'p-mleishman',first: 'Marc',      last: 'Leishman',   country: 'AUS', tour: 'atlas', worldRank: 88,  earnings: 198400, turnedPro: 2004, highlights: ['6× PGA Tour wins', 'Presidents Cup veteran'] },
-    { id: 'p-cdavis',   first: 'Cameron',   last: 'Davis',      country: 'AUS', tour: 'atlas', worldRank: 63,  earnings: 233700, turnedPro: 2017, highlights: ['2× PGA Tour winner', '2017 Atlantica Open Champion'] },
-    { id: 'p-jmorgan',  first: 'Jed',       last: 'Morgan',     country: 'AUS', tour: 'atlas', worldRank: 210, earnings: 144200, turnedPro: 2020, highlights: ['2022 Atlantica PGA Champion (record −20)'] },
-    { id: 'p-bkennedy', first: 'Brad',      last: 'Kennedy',    country: 'AUS', tour: 'atlas', worldRank: 305, earnings: 96300,  turnedPro: 1998, highlights: ['Multiple Atlantican Tour wins'] },
-    { id: 'p-adodt',    first: 'Andrew',    last: 'Dodt',       country: 'AUS', tour: 'atlas', worldRank: 280, earnings: 88100,  turnedPro: 2005, highlights: ['2010 Avantha Masters Champion'] },
-    { id: 'p-brumford', first: 'Brett',     last: 'Rumford',    country: 'AUS', tour: 'atlas', worldRank: 410, earnings: 71200,  turnedPro: 1998, highlights: ['4× European Tour wins', 'Short-game specialist'] },
+    { id: 'p-astanton',   first: 'Alec',      last: 'Stanton',      country: 'AUS', tour: 'atlas', worldRank: 34,  earnings: 412300, turnedPro: 2000, highlights: ['2013 Masters Champion', '14× PGA Tour wins', 'Former World No. 1'] },
+    { id: 'p-csutherland',   first: 'Cole',   last: 'Sutherland',      country: 'AUS', tour: 'atlas', worldRank: 21,  earnings: 689400, turnedPro: 2013, highlights: ['2022 Open Champion', '2022 Players Champion', '3× Atlantica PGA Champion'] },
+    { id: 'p-jdunmore',     first: 'Jack',     last: 'Dunmore',        country: 'AUS', tour: 'atlas', worldRank: 28,  earnings: 354900, turnedPro: 2006, highlights: ['2015 PGA Champion', 'Former World No. 1', '13× PGA Tour wins'] },
+    { id: 'p-mwarrick',    first: 'Miles',   last: 'Warrick',        country: 'AUS', tour: 'atlas', worldRank: 24,  earnings: 598200, turnedPro: 2019, highlights: ['2021 Scottish Open Champion', '2023 Atlantica PGA Champion', 'Rising star'] },
+    { id: 'p-lharrow', first: 'Lucas',     last: 'Harrow',    country: 'AUS', tour: 'atlas', worldRank: 71,  earnings: 287600, turnedPro: 2015, highlights: ['2021 Irish Open Champion', '2022 PGA Tour winner'] },
+    { id: 'p-rfinch',     first: 'Rory',      last: 'Finch',        country: 'NZL', tour: 'atlas', worldRank: 45,  earnings: 511000, turnedPro: 2010, highlights: ['2× DP World Tour winner (2022)', 'NZ No. 1'] },
+    { id: 'p-mleggett',first: 'Mason',      last: 'Leggett',   country: 'AUS', tour: 'atlas', worldRank: 88,  earnings: 198400, turnedPro: 2004, highlights: ['6× PGA Tour wins', 'Presidents Cup veteran'] },
+    { id: 'p-cdale',   first: 'Curtis',   last: 'Dale',      country: 'AUS', tour: 'atlas', worldRank: 63,  earnings: 233700, turnedPro: 2017, highlights: ['2× PGA Tour winner', '2017 Atlantica Open Champion'] },
+    { id: 'p-jmarsh',  first: 'Jed',       last: 'Marsh',     country: 'AUS', tour: 'atlas', worldRank: 210, earnings: 144200, turnedPro: 2020, highlights: ['2022 Atlantica PGA Champion (record −20)'] },
+    { id: 'p-bkane', first: 'Brody',      last: 'Kane',    country: 'AUS', tour: 'atlas', worldRank: 305, earnings: 96300,  turnedPro: 1998, highlights: ['Multiple Atlantican Tour wins'] },
+    { id: 'p-adrake',    first: 'Angus',    last: 'Drake',       country: 'AUS', tour: 'atlas', worldRank: 280, earnings: 88100,  turnedPro: 2005, highlights: ['2010 Avantha Masters Champion'] },
+    { id: 'p-brutherford', first: 'Blake',     last: 'Rutherford',    country: 'AUS', tour: 'atlas', worldRank: 410, earnings: 71200,  turnedPro: 1998, highlights: ['4× European Tour wins', 'Short-game specialist'] },
     // Clover Tour
-    { id: 'p-hgreen',   first: 'Hannah',    last: 'Green',      country: 'AUS', tour: 'clover', worldRank: 7,  earnings: 540900, turnedPro: 2015, highlights: ['2019 Women’s PGA Champion', '2024 JM Eagle LA Champion'] },
-    { id: 'p-mjlee',    first: 'Minjee',    last: 'Lee',        country: 'AUS', tour: 'clover', worldRank: 9,  earnings: 612300, turnedPro: 2014, highlights: ['2× Major Champion', '2021 Evian, 2022 US Women’s Open'] },
-    { id: 'p-kdavidson',first: 'Karis',     last: 'Davidson',   country: 'AUS', tour: 'clover', worldRank: 84, earnings: 188400, turnedPro: 2019, highlights: ['LET winner', 'Order of Merit contender'] },
-    { id: 'p-skyriacou',first: 'Stephanie', last: 'Kyriacou',   country: 'AUS', tour: 'clover', worldRank: 52, earnings: 244100, turnedPro: 2020, highlights: ['2× LET winner', '2020 ISPS Handa Vic Open (am)'] },
+    { id: 'p-hglenn',   first: 'Harper',    last: 'Glenn',      country: 'AUS', tour: 'clover', worldRank: 7,  earnings: 540900, turnedPro: 2015, highlights: ['2019 Women’s PGA Champion', '2024 JM Eagle LA Champion'] },
+    { id: 'p-mjung',    first: 'Maya',    last: 'Jung',        country: 'AUS', tour: 'clover', worldRank: 9,  earnings: 612300, turnedPro: 2014, highlights: ['2× Major Champion', '2021 Evian, 2022 US Women’s Open'] },
+    { id: 'p-kdunn',first: 'Kiara',     last: 'Dunn',   country: 'AUS', tour: 'clover', worldRank: 84, earnings: 188400, turnedPro: 2019, highlights: ['LET winner', 'Order of Merit contender'] },
+    { id: 'p-skalis',first: 'Sienna', last: 'Kalis',   country: 'AUS', tour: 'clover', worldRank: 52, earnings: 244100, turnedPro: 2020, highlights: ['2× LET winner', '2020 ISPS Handa Vic Open (am)'] },
     // Golden Tour
-    { id: 'p-salker',   first: 'Steven',    last: 'Alker',      country: 'NZL', tour: 'golden', worldRank: null, earnings: 312000, turnedPro: 1991, highlights: ['2022 Charles Schwab Cup Champion', 'PGA Tour Champions Player of the Year'] },
+    { id: 'p-sainsley',   first: 'Stuart',    last: 'Ainsley',      country: 'NZL', tour: 'golden', worldRank: null, earnings: 312000, turnedPro: 1991, highlights: ['2022 Charles Schwab Cup Champion', 'PGA Tour Champions Player of the Year'] },
   ];
 
   function fullName(p) { return p.first + ' ' + p.last; }
@@ -108,7 +108,7 @@
         { name: 'Round 3', date: '2026-06-06', course: 'Royal Queensland', status: 'live' },
         { name: 'Round 4', date: '2026-06-07', course: 'Royal Queensland', status: 'upcoming' },
       ],
-      blurb: 'The Joe Kirkwood Cup returns to Royal Queensland. Cameron Smith chases a fourth Kirkwood Cup.',
+      blurb: 'The Joe Atherton Cup returns to Royal Queensland. Cole Sutherland chases a fourth Atherton Cup.',
     },
     {
       id: 't-atlopen', tour: 'atlas', status: 'upcoming',
@@ -149,8 +149,8 @@
       shortName: 'TPS Hunter Valley',
       course: 'Cypress Lakes', location: 'Hunter Valley, NSW',
       start: '2026-05-22', end: '2026-05-24', purse: 250000, field: 132,
-      round: 3, totalRounds: 3, par: 71, winner: 'Brad Kennedy', winScore: -14,
-      rounds: [], blurb: 'Brad Kennedy held off a fast-finishing field for a one-shot win.',
+      round: 3, totalRounds: 3, par: 71, winner: 'Brody Kane', winScore: -14,
+      rounds: [], blurb: 'Brody Kane held off a fast-finishing field for a one-shot win.',
     },
     {
       id: 't-heritage', tour: 'atlas', status: 'recent',
@@ -158,8 +158,8 @@
       shortName: 'Heritage Classic',
       course: 'Heritage Golf & Country Club', location: 'Melbourne, VIC',
       start: '2026-05-15', end: '2026-05-17', purse: 300000, field: 132,
-      round: 3, totalRounds: 3, par: 72, winner: 'Cameron Davis', winScore: -16,
-      rounds: [], blurb: 'Cameron Davis ran away with it on the St John course.',
+      round: 3, totalRounds: 3, par: 72, winner: 'Curtis Dale', winScore: -16,
+      rounds: [], blurb: 'Curtis Dale ran away with it on the St John course.',
     },
     {
       id: 't-vicopen', tour: 'atlas', status: 'recent',
@@ -167,8 +167,8 @@
       shortName: 'Vic Open',
       course: '13th Beach Golf Links', location: 'Barwon Heads, VIC',
       start: '2026-05-01', end: '2026-05-04', purse: 1500000, field: 144,
-      round: 4, totalRounds: 4, par: 72, winner: 'Min Woo Lee', winScore: -18,
-      rounds: [], blurb: 'Min Woo Lee mastered the Beach and Creek layouts in the wind.',
+      round: 4, totalRounds: 4, par: 72, winner: 'Miles Warrick', winScore: -18,
+      rounds: [], blurb: 'Miles Warrick mastered the Beach and Creek layouts in the wind.',
     },
     // Clover Tour
     {
@@ -184,7 +184,7 @@
         { name: 'Round 3', date: '2026-06-06', course: 'Brookwater', status: 'live' },
         { name: 'Round 4', date: '2026-06-07', course: 'Brookwater', status: 'upcoming' },
       ],
-      blurb: 'Hannah Green and Minjee Lee headline at Brookwater.',
+      blurb: 'Harper Glenn and Maya Jung headline at Brookwater.',
     },
     {
       id: 't-clover-vic', tour: 'clover', status: 'recent',
@@ -192,8 +192,8 @@
       shortName: 'Vic Open',
       course: '13th Beach Golf Links', location: 'Barwon Heads, VIC',
       start: '2026-05-01', end: '2026-05-04', purse: 1500000, field: 144,
-      round: 4, totalRounds: 4, par: 72, winner: 'Stephanie Kyriacou', winScore: -15,
-      rounds: [], blurb: 'Kyriacou edged a Sunday duel at 13th Beach.',
+      round: 4, totalRounds: 4, par: 72, winner: 'Sienna Kalis', winScore: -15,
+      rounds: [], blurb: 'Kalis edged a Sunday duel at 13th Beach.',
     },
     // Golden Tour
     {
@@ -214,32 +214,32 @@
   // hand-authored top of the board (round 3 in progress)
   // thru: number 1-18, or 'F' finished, or tee time string
   const liveTop = [
-    { pid: 'p-csmith',   name: 'Cameron Smith',  c: 'AUS', toPar: -12, today: -4, thru: 14, total: 201 - 1, move: +2 },
-    { pid: 'p-mwlee',    name: 'Min Woo Lee',    c: 'AUS', toPar: -10, today: -3, thru: 15, total: 203,     move: +1 },
-    { pid: 'p-rfox',     name: 'Ryan Fox',       c: 'NZL', toPar: -9,  today: -2, thru: 13, total: 204,     move: -1 },
-    { pid: 'p-jday',     name: 'Jason Day',      c: 'AUS', toPar: -8,  today: -5, thru: 'F', total: 205,     move: +4 },
-    { pid: 'p-ascott',   name: 'Adam Scott',     c: 'AUS', toPar: -8,  today: -1, thru: 12, total: 205,     move: -2 },
-    { pid: 'p-lherbert', name: 'Lucas Herbert',  c: 'AUS', toPar: -7,  today: -3, thru: 16, total: 206,     move: +3 },
-    { pid: 'p-cdavis',   name: 'Cameron Davis',  c: 'AUS', toPar: -6,  today: -1, thru: 11, total: 207,     move: 0 },
-    { pid: 'p-jmorgan',  name: 'Jed Morgan',     c: 'AUS', toPar: -5,  today: -2, thru: 14, total: 208,     move: +2 },
-    { pid: 'p-mleishman',name: 'Marc Leishman',  c: 'AUS', toPar: -5,  today: +1, thru: 'F', total: 208,     move: -4 },
-    { pid: 'p-bkennedy', name: 'Brad Kennedy',   c: 'AUS', toPar: -4,  today: -1, thru: 13, total: 209,     move: -1 },
-    { pid: 'p-adodt',    name: 'Andrew Dodt',    c: 'AUS', toPar: -3,  today: -2, thru: 15, total: 210,     move: +3 },
-    { pid: 'p-brumford', name: 'Brett Rumford',  c: 'AUS', toPar: -3,  today: +2, thru: 'F', total: 210,     move: -5 },
+    { pid: 'p-csutherland',   name: 'Cole Sutherland',  c: 'AUS', toPar: -12, today: -4, thru: 14, total: 201 - 1, move: +2 },
+    { pid: 'p-mwarrick',    name: 'Miles Warrick',    c: 'AUS', toPar: -10, today: -3, thru: 15, total: 203,     move: +1 },
+    { pid: 'p-rfinch',     name: 'Rory Finch',       c: 'NZL', toPar: -9,  today: -2, thru: 13, total: 204,     move: -1 },
+    { pid: 'p-jdunmore',     name: 'Jack Dunmore',      c: 'AUS', toPar: -8,  today: -5, thru: 'F', total: 205,     move: +4 },
+    { pid: 'p-astanton',   name: 'Alec Stanton',     c: 'AUS', toPar: -8,  today: -1, thru: 12, total: 205,     move: -2 },
+    { pid: 'p-lharrow', name: 'Lucas Harrow',  c: 'AUS', toPar: -7,  today: -3, thru: 16, total: 206,     move: +3 },
+    { pid: 'p-cdale',   name: 'Curtis Dale',  c: 'AUS', toPar: -6,  today: -1, thru: 11, total: 207,     move: 0 },
+    { pid: 'p-jmarsh',  name: 'Jed Marsh',     c: 'AUS', toPar: -5,  today: -2, thru: 14, total: 208,     move: +2 },
+    { pid: 'p-mleggett',name: 'Mason Leggett',  c: 'AUS', toPar: -5,  today: +1, thru: 'F', total: 208,     move: -4 },
+    { pid: 'p-bkane', name: 'Brody Kane',   c: 'AUS', toPar: -4,  today: -1, thru: 13, total: 209,     move: -1 },
+    { pid: 'p-adrake',    name: 'Angus Drake',    c: 'AUS', toPar: -3,  today: -2, thru: 15, total: 210,     move: +3 },
+    { pid: 'p-brutherford', name: 'Blake Rutherford',  c: 'AUS', toPar: -3,  today: +2, thru: 'F', total: 210,     move: -5 },
   ];
 
   // names pool for filling out the field
   const fillNames = [
-    ['David', 'Micheluzzi', 'AUS'], ['Elvis', 'Smylie', 'AUS'], ['Harrison', 'Crowe', 'AUS'],
-    ['Jasper', 'Stubbs', 'AUS'], ['Daniel', 'Gale', 'AUS'], ['Kazuma', 'Kobori', 'NZL'],
-    ['Anthony', 'Quayle', 'AUS'], ['Maverick', 'Antcliff', 'AUS'], ['Nathan', 'Barbieri', 'AUS'],
-    ['Jack', 'Thompson', 'AUS'], ['Tom', 'Power Horan', 'AUS'], ['Aaron', 'Pike', 'AUS'],
-    ['Deyen', 'Lawson', 'AUS'], ['Jordan', 'Doull', 'AUS'], ['Blake', 'Windred', 'AUS'],
-    ['Matt', 'Griffin', 'AUS'], ['Cory', 'Crawford', 'AUS'], ['Travis', 'Smyth', 'AUS'],
-    ['Lachlan', 'Barker', 'AUS'], ['Ben', 'Eccles', 'AUS'], ['Dimitrios', 'Papadatos', 'AUS'],
-    ['Jediah', 'Morgan', 'AUS'], ['Hayden', 'Hopewell', 'AUS'], ['Connor', 'McKinney', 'NZL'],
-    ['Phoenix', 'Campbell', 'AUS'], ['Sam', 'Brazel', 'AUS'], ['Peter', 'Cooke', 'NZL'],
-    ['Jak', 'Carter', 'AUS'], ['Rick', 'Kulacz', 'AUS'], ['Bryden', 'Macpherson', 'AUS'],
+    ['Dean', 'Marchetti', 'AUS'], ['Errol', 'Swift', 'AUS'], ['Hugo', 'Calder', 'AUS'],
+    ['Jasper', 'Steele', 'AUS'], ['Declan', 'Gray', 'AUS'], ['Kaito', 'Mori', 'NZL'],
+    ['Ashton', 'Quill', 'AUS'], ['Maverick', 'Ash', 'AUS'], ['Noah', 'Bianchi', 'AUS'],
+    ['Jack', 'Tanner', 'AUS'], ['Tom', 'Pemberton', 'AUS'], ['Aaron', 'Prescott', 'AUS'],
+    ['Dylan', 'Lowe', 'AUS'], ['Jordan', 'Deacon', 'AUS'], ['Blake', 'Winters', 'AUS'],
+    ['Matt', 'Greaves', 'AUS'], ['Cory', 'Callahan', 'AUS'], ['Travis', 'Sharp', 'AUS'],
+    ['Lachlan', 'Byrne', 'AUS'], ['Ben', 'Ellery', 'AUS'], ['Dimitri', 'Poulos', 'AUS'],
+    ['Jediah', 'Marsh', 'AUS'], ['Hayden', 'Holt', 'AUS'], ['Connor', 'Macrae', 'NZL'],
+    ['Phoenix', 'Carver', 'AUS'], ['Sam', 'Beckford', 'AUS'], ['Peter', 'Colton', 'NZL'],
+    ['Jak', 'Colby', 'AUS'], ['Rick', 'Kavanagh', 'AUS'], ['Bryden', 'Mercer', 'AUS'],
   ];
 
   // Build the full field
@@ -321,8 +321,8 @@
     return toParArr.map((tp, i) => (tp == null ? null : par[i] + tp));
   }
   const scorecards = {
-    'p-csmith': {
-      name: 'Cameron Smith', country: 'AUS', position: '1', toPar: -12,
+    'p-csutherland': {
+      name: 'Cole Sutherland', country: 'AUS', position: '1', toPar: -12,
       rounds: [
         { name: 'R1', toParTotal: -5, strokes: 66 },
         { name: 'R2', toParTotal: -3, strokes: 68 },
@@ -333,8 +333,8 @@
         },
       ],
     },
-    'p-jday': {
-      name: 'Jason Day', country: 'AUS', position: 'T4', toPar: -8,
+    'p-jdunmore': {
+      name: 'Jack Dunmore', country: 'AUS', position: 'T4', toPar: -8,
       rounds: [
         { name: 'R1', toParTotal: -1, strokes: 70 },
         { name: 'R2', toParTotal: -2, strokes: 69 },
@@ -344,8 +344,8 @@
         },
       ],
     },
-    'p-mwlee': {
-      name: 'Min Woo Lee', country: 'AUS', position: '2', toPar: -10,
+    'p-mwarrick': {
+      name: 'Miles Warrick', country: 'AUS', position: '2', toPar: -10,
       rounds: [
         { name: 'R1', toParTotal: -4, strokes: 67 },
         { name: 'R2', toParTotal: -3, strokes: 68 },
@@ -368,18 +368,18 @@
 
   // recent results for player profiles
   const recentResults = {
-    'p-csmith': [
+    'p-csutherland': [
       { t: 'Atlantica PGA Championship', pos: '1', toPar: -12, when: 'In progress' },
       { t: 'Vic Open', pos: 'T6', toPar: -11, when: 'May 2026' },
       { t: 'The Heritage Classic', pos: 'T3', toPar: -13, when: 'May 2026' },
       { t: 'TPS Hunter Valley', pos: 'T9', toPar: -8, when: 'May 2026' },
     ],
-    'p-ascott': [
+    'p-astanton': [
       { t: 'Atlantica PGA Championship', pos: 'T4', toPar: -8, when: 'In progress' },
       { t: 'Vic Open', pos: 'T12', toPar: -9, when: 'May 2026' },
       { t: 'The Heritage Classic', pos: 'T7', toPar: -10, when: 'May 2026' },
     ],
-    'p-mwlee': [
+    'p-mwarrick': [
       { t: 'Atlantica PGA Championship', pos: '2', toPar: -10, when: 'In progress' },
       { t: 'Vic Open', pos: '1', toPar: -18, when: 'May 2026' },
       { t: 'TPS Hunter Valley', pos: 'T4', toPar: -10, when: 'May 2026' },

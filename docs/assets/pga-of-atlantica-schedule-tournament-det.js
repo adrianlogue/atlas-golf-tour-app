@@ -226,10 +226,10 @@
   function PlayersScreen({ nav, tour }) {
     const [q, setQ] = useState('');
     const inputRef = useRef(null);
-    const [history, setHistory] = useState(['Adam Scott', 'Hannah Green']);
+    const [history, setHistory] = useState(['Alec Stanton', 'Harper Glenn']);
     useEffect(() => { const t = setTimeout(() => inputRef.current && inputRef.current.focus(), 350); return () => clearTimeout(t); }, []);
     const results = q.trim().length >= 2 ? D.players.filter((p) => D.fullName(p).toLowerCase().includes(q.toLowerCase())) : [];
-    const popular = ['p-csmith', 'p-ascott', 'p-mwlee', 'p-hgreen', 'p-jday', 'p-mjlee'].map(D.playerById).filter(Boolean);
+    const popular = ['p-csutherland', 'p-astanton', 'p-mwarrick', 'p-hglenn', 'p-jdunmore', 'p-mjung'].map(D.playerById).filter(Boolean);
 
     function open(p) { setHistory((h) => [D.fullName(p), ...h.filter((x) => x !== D.fullName(p))].slice(0, 4)); nav.push('player', { id: p.id }); }
 
