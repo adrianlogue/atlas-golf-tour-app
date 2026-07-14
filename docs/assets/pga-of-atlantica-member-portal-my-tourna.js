@@ -455,7 +455,7 @@
   function AccreditationScreen({ nav }) {
     return (
       <>
-        <U.Header onBack={nav.pop} big="Accreditation" subtitle="Atlantica PGA Championship" />
+        <U.Header onBack={nav.pop} big="Accreditation" subtitle="Meridian Championship" />
         <div className="scroll">
           <div style={{ padding: '8px 16px 120px' }}>
             <div style={{ fontSize: 12.5, color: 'var(--muted)', lineHeight: 1.5, marginBottom: 14, padding: '0 2px' }}>

@@ -69,14 +69,14 @@
   // earnings in AUD (season)
   const players = [
     { id: 'p-astanton',   first: 'Alec',      last: 'Stanton',      country: 'AUS', tour: 'atlas', worldRank: 34,  earnings: 412300, turnedPro: 2000, highlights: ['2013 Masters Champion', '14× PGA Tour wins', 'Former World No. 1'] },
-    { id: 'p-csutherland',   first: 'Cole',   last: 'Sutherland',      country: 'AUS', tour: 'atlas', worldRank: 21,  earnings: 689400, turnedPro: 2013, highlights: ['2022 Open Champion', '2022 Players Champion', '3× Atlantica PGA Champion'] },
+    { id: 'p-csutherland',   first: 'Cole',   last: 'Sutherland',      country: 'AUS', tour: 'atlas', worldRank: 21,  earnings: 689400, turnedPro: 2013, highlights: ['2022 Open Champion', '2022 Players Champion', '3× Meridian Champion'] },
     { id: 'p-jdunmore',     first: 'Jack',     last: 'Dunmore',        country: 'AUS', tour: 'atlas', worldRank: 28,  earnings: 354900, turnedPro: 2006, highlights: ['2015 PGA Champion', 'Former World No. 1', '13× PGA Tour wins'] },
-    { id: 'p-mwarrick',    first: 'Miles',   last: 'Warrick',        country: 'AUS', tour: 'atlas', worldRank: 24,  earnings: 598200, turnedPro: 2019, highlights: ['2021 Scottish Open Champion', '2023 Atlantica PGA Champion', 'Rising star'] },
+    { id: 'p-mwarrick',    first: 'Miles',   last: 'Warrick',        country: 'AUS', tour: 'atlas', worldRank: 24,  earnings: 598200, turnedPro: 2019, highlights: ['2021 Scottish Open Champion', '2023 Meridian Champion', 'Rising star'] },
     { id: 'p-lharrow', first: 'Lucas',     last: 'Harrow',    country: 'AUS', tour: 'atlas', worldRank: 71,  earnings: 287600, turnedPro: 2015, highlights: ['2021 Irish Open Champion', '2022 PGA Tour winner'] },
     { id: 'p-rfinch',     first: 'Rory',      last: 'Finch',        country: 'NZL', tour: 'atlas', worldRank: 45,  earnings: 511000, turnedPro: 2010, highlights: ['2× DP World Tour winner (2022)', 'NZ No. 1'] },
     { id: 'p-mleggett',first: 'Mason',      last: 'Leggett',   country: 'AUS', tour: 'atlas', worldRank: 88,  earnings: 198400, turnedPro: 2004, highlights: ['6× PGA Tour wins', 'Presidents Cup veteran'] },
-    { id: 'p-cdale',   first: 'Curtis',   last: 'Dale',      country: 'AUS', tour: 'atlas', worldRank: 63,  earnings: 233700, turnedPro: 2017, highlights: ['2× PGA Tour winner', '2017 Atlantica Open Champion'] },
-    { id: 'p-jmarsh',  first: 'Jed',       last: 'Marsh',     country: 'AUS', tour: 'atlas', worldRank: 210, earnings: 144200, turnedPro: 2020, highlights: ['2022 Atlantica PGA Champion (record −20)'] },
+    { id: 'p-cdale',   first: 'Curtis',   last: 'Dale',      country: 'AUS', tour: 'atlas', worldRank: 63,  earnings: 233700, turnedPro: 2017, highlights: ['2× PGA Tour winner', '2017 Atlas Open Champion'] },
+    { id: 'p-jmarsh',  first: 'Jed',       last: 'Marsh',     country: 'AUS', tour: 'atlas', worldRank: 210, earnings: 144200, turnedPro: 2020, highlights: ['2022 Meridian Champion (record −20)'] },
     { id: 'p-bkane', first: 'Brody',      last: 'Kane',    country: 'AUS', tour: 'atlas', worldRank: 305, earnings: 96300,  turnedPro: 1998, highlights: ['Multiple Atlantican Tour wins'] },
     { id: 'p-adrake',    first: 'Angus',    last: 'Drake',       country: 'AUS', tour: 'atlas', worldRank: 280, earnings: 88100,  turnedPro: 2005, highlights: ['2010 Avantha Masters Champion'] },
     { id: 'p-brutherford', first: 'Blake',     last: 'Rutherford',    country: 'AUS', tour: 'atlas', worldRank: 410, earnings: 71200,  turnedPro: 1998, highlights: ['4× European Tour wins', 'Short-game specialist'] },
@@ -84,7 +84,7 @@
     { id: 'p-hglenn',   first: 'Harper',    last: 'Glenn',      country: 'AUS', tour: 'clover', worldRank: 7,  earnings: 540900, turnedPro: 2015, highlights: ['2019 Women’s PGA Champion', '2024 JM Eagle LA Champion'] },
     { id: 'p-mjung',    first: 'Maya',    last: 'Jung',        country: 'AUS', tour: 'clover', worldRank: 9,  earnings: 612300, turnedPro: 2014, highlights: ['2× Major Champion', '2021 Evian, 2022 US Women’s Open'] },
     { id: 'p-kdunn',first: 'Kiara',     last: 'Dunn',   country: 'AUS', tour: 'clover', worldRank: 84, earnings: 188400, turnedPro: 2019, highlights: ['LET winner', 'Order of Merit contender'] },
-    { id: 'p-skalis',first: 'Sienna', last: 'Kalis',   country: 'AUS', tour: 'clover', worldRank: 52, earnings: 244100, turnedPro: 2020, highlights: ['2× LET winner', '2020 ISPS Handa Vic Open (am)'] },
+    { id: 'p-skalis',first: 'Sienna', last: 'Kalis',   country: 'AUS', tour: 'clover', worldRank: 52, earnings: 244100, turnedPro: 2020, highlights: ['2× LET winner', '2020 Emerald Open (am)'] },
     // Golden Tour
     { id: 'p-sainsley',   first: 'Stuart',    last: 'Ainsley',      country: 'NZL', tour: 'golden', worldRank: null, earnings: 312000, turnedPro: 1991, highlights: ['2022 Charles Schwab Cup Champion', 'PGA Tour Champions Player of the Year'] },
   ];
@@ -96,9 +96,9 @@
   // status: 'live' | 'upcoming' | 'recent'
   const tournaments = [
     {
-      id: 't-atlpga', tour: 'atlas', status: 'live',
-      name: 'Fortinet Atlantica PGA Championship',
-      shortName: 'Atlantica PGA Championship',
+      id: 't-meridian', tour: 'atlas', status: 'live',
+      name: 'The Meridian Championship',
+      shortName: 'Meridian Championship',
       course: 'Royal Queensland Golf Club', location: 'Brisbane, QLD',
       start: '2026-06-04', end: '2026-06-07', purse: 2000000, field: 144,
       round: 3, totalRounds: 4, par: 71,
@@ -111,9 +111,9 @@
       blurb: 'The Joe Atherton Cup returns to Royal Queensland. Cole Sutherland chases a fourth Atherton Cup.',
     },
     {
-      id: 't-atlopen', tour: 'atlas', status: 'upcoming',
-      name: 'ISPS HANDA Atlantica Open',
-      shortName: 'Atlantica Open',
+      id: 't-atlasopen', tour: 'atlas', status: 'upcoming',
+      name: 'The Atlas Open',
+      shortName: 'Atlas Open',
       course: 'Kingston Heath Golf Club', location: 'Melbourne, VIC',
       start: '2026-06-25', end: '2026-06-28', purse: 1700000, field: 156,
       round: 0, totalRounds: 4, par: 72,
@@ -123,48 +123,48 @@
         { name: 'Round 3', date: '2026-06-27', course: 'Kingston Heath', status: 'upcoming' },
         { name: 'Round 4', date: '2026-06-28', course: 'Kingston Heath', status: 'upcoming' },
       ],
-      blurb: 'The Stonehaven Cup. Men’s and women’s fields play side by side across two of Melbourne’s Sandbelt jewels.',
+      blurb: 'The Wayfinder Cup. Men’s and women’s fields play side by side across two of Melbourne’s Sandbelt jewels.',
     },
     {
-      id: 't-nzopen', tour: 'atlas', status: 'upcoming',
-      name: 'The New Zealand Open',
-      shortName: 'New Zealand Open',
+      id: 't-sthcross', tour: 'atlas', status: 'upcoming',
+      name: 'The Southern Cross Open',
+      shortName: 'Southern Cross Open',
       course: 'Millbrook Resort', location: 'Queenstown, NZ',
       start: '2026-07-09', end: '2026-07-12', purse: 1500000, field: 144,
       round: 0, totalRounds: 4, par: 72,
       rounds: [], blurb: 'Pro-am format against the Southern Alps at Millbrook.',
     },
     {
-      id: 't-webex-syd', tour: 'atlas', status: 'upcoming',
-      name: 'Webex Players Series — Sydney',
-      shortName: 'Webex Players Series Sydney',
+      id: 't-waypoint-syd', tour: 'atlas', status: 'upcoming',
+      name: 'Waypoint Series — Sydney',
+      shortName: 'Waypoint Series Sydney',
       course: 'The Hills Golf Club', location: 'Sydney, NSW',
       start: '2026-07-23', end: '2026-07-25', purse: 250000, field: 132,
       round: 0, totalRounds: 3, par: 72,
       rounds: [], blurb: 'Men and women, professionals and amateurs, one mixed leaderboard.',
     },
     {
-      id: 't-tps-hunter', tour: 'atlas', status: 'recent',
-      name: 'TPS Hunter Valley',
-      shortName: 'TPS Hunter Valley',
+      id: 't-waypoint-hunter', tour: 'atlas', status: 'recent',
+      name: 'Waypoint Series Hunter Valley',
+      shortName: 'Waypoint Series Hunter Valley',
       course: 'Cypress Lakes', location: 'Hunter Valley, NSW',
       start: '2026-05-22', end: '2026-05-24', purse: 250000, field: 132,
       round: 3, totalRounds: 3, par: 71, winner: 'Brody Kane', winScore: -14,
       rounds: [], blurb: 'Brody Kane held off a fast-finishing field for a one-shot win.',
     },
     {
-      id: 't-heritage', tour: 'atlas', status: 'recent',
-      name: 'The Heritage Classic',
-      shortName: 'Heritage Classic',
+      id: 't-longitude', tour: 'atlas', status: 'recent',
+      name: 'The Longitude Classic',
+      shortName: 'Longitude Classic',
       course: 'Heritage Golf & Country Club', location: 'Melbourne, VIC',
       start: '2026-05-15', end: '2026-05-17', purse: 300000, field: 132,
       round: 3, totalRounds: 3, par: 72, winner: 'Curtis Dale', winScore: -16,
       rounds: [], blurb: 'Curtis Dale ran away with it on the St John course.',
     },
     {
-      id: 't-vicopen', tour: 'atlas', status: 'recent',
-      name: 'Vic Open',
-      shortName: 'Vic Open',
+      id: 't-truenorth', tour: 'atlas', status: 'recent',
+      name: 'True North Open',
+      shortName: 'True North Open',
       course: '13th Beach Golf Links', location: 'Barwon Heads, VIC',
       start: '2026-05-01', end: '2026-05-04', purse: 1500000, field: 144,
       round: 4, totalRounds: 4, par: 72, winner: 'Miles Warrick', winScore: -18,
@@ -172,9 +172,9 @@
     },
     // Clover Tour
     {
-      id: 't-clover', tour: 'clover', status: 'live',
-      name: 'Clover Tour Championship',
-      shortName: 'Clover Championship',
+      id: 't-fourleaf', tour: 'clover', status: 'live',
+      name: 'The Four-Leaf Championship',
+      shortName: 'Four-Leaf Championship',
       course: 'Brookwater Golf & Country Club', location: 'Brisbane, QLD',
       start: '2026-06-04', end: '2026-06-07', purse: 400000, field: 132,
       round: 3, totalRounds: 4, par: 72,
@@ -187,9 +187,9 @@
       blurb: 'Harper Glenn and Maya Jung headline at Brookwater.',
     },
     {
-      id: 't-clover-vic', tour: 'clover', status: 'recent',
-      name: 'Vic Open (Women)',
-      shortName: 'Vic Open',
+      id: 't-emerald', tour: 'clover', status: 'recent',
+      name: 'The Emerald Open',
+      shortName: 'Emerald Open',
       course: '13th Beach Golf Links', location: 'Barwon Heads, VIC',
       start: '2026-05-01', end: '2026-05-04', purse: 1500000, field: 144,
       round: 4, totalRounds: 4, par: 72, winner: 'Sienna Kalis', winScore: -15,
@@ -197,9 +197,9 @@
     },
     // Golden Tour
     {
-      id: 't-golden-q', tour: 'golden', status: 'upcoming',
-      name: 'Golden Tour Queensland Classic',
-      shortName: 'Queensland Classic',
+      id: 't-sovereign', tour: 'golden', status: 'upcoming',
+      name: 'The Sovereign Classic',
+      shortName: 'Sovereign Classic',
       course: 'Sanctuary Cove (The Pines)', location: 'Gold Coast, QLD',
       start: '2026-06-19', end: '2026-06-21', purse: 200000, field: 78,
       round: 0, totalRounds: 3, par: 72,
@@ -207,7 +207,7 @@
     },
   ];
 
-  // ---- Leaderboard generation for the live Atlantica PGA Championship ----
+  // ---- Leaderboard generation for the live Meridian Championship ----
   // Top group hand-authored; rest generated to reach a 144 field.
   const flagOf = (c) => FLAG[c] || '🏳️';
 
@@ -369,20 +369,20 @@
   // recent results for player profiles
   const recentResults = {
     'p-csutherland': [
-      { t: 'Atlantica PGA Championship', pos: '1', toPar: -12, when: 'In progress' },
-      { t: 'Vic Open', pos: 'T6', toPar: -11, when: 'May 2026' },
-      { t: 'The Heritage Classic', pos: 'T3', toPar: -13, when: 'May 2026' },
-      { t: 'TPS Hunter Valley', pos: 'T9', toPar: -8, when: 'May 2026' },
+      { t: 'Meridian Championship', pos: '1', toPar: -12, when: 'In progress' },
+      { t: 'True North Open', pos: 'T6', toPar: -11, when: 'May 2026' },
+      { t: 'The Longitude Classic', pos: 'T3', toPar: -13, when: 'May 2026' },
+      { t: 'Waypoint Series Hunter Valley', pos: 'T9', toPar: -8, when: 'May 2026' },
     ],
     'p-astanton': [
-      { t: 'Atlantica PGA Championship', pos: 'T4', toPar: -8, when: 'In progress' },
-      { t: 'Vic Open', pos: 'T12', toPar: -9, when: 'May 2026' },
-      { t: 'The Heritage Classic', pos: 'T7', toPar: -10, when: 'May 2026' },
+      { t: 'Meridian Championship', pos: 'T4', toPar: -8, when: 'In progress' },
+      { t: 'True North Open', pos: 'T12', toPar: -9, when: 'May 2026' },
+      { t: 'The Longitude Classic', pos: 'T7', toPar: -10, when: 'May 2026' },
     ],
     'p-mwarrick': [
-      { t: 'Atlantica PGA Championship', pos: '2', toPar: -10, when: 'In progress' },
-      { t: 'Vic Open', pos: '1', toPar: -18, when: 'May 2026' },
-      { t: 'TPS Hunter Valley', pos: 'T4', toPar: -10, when: 'May 2026' },
+      { t: 'Meridian Championship', pos: '2', toPar: -10, when: 'In progress' },
+      { t: 'True North Open', pos: '1', toPar: -18, when: 'May 2026' },
+      { t: 'Waypoint Series Hunter Valley', pos: 'T4', toPar: -10, when: 'May 2026' },
     ],
   };
 

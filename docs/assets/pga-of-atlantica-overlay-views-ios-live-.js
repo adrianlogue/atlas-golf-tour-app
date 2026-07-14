@@ -6,7 +6,7 @@
 
   /* ===================== iOS LIVE ACTIVITY (lock screen) ===================== */
   function LiveActivityView({ onClose }) {
-    const t = D.tournaments.find((x) => x.id === 't-atlpga');
+    const t = D.tournaments.find((x) => x.id === 't-meridian');
     const top3 = D.leaderboard.slice(0, 3);
     const leader = top3[0];
     return (
@@ -56,7 +56,7 @@
                 <div style={{ display: 'flex', alignItems: 'center', gap: 9, marginBottom: 12 }}>
                   <window.PGAEmblemMark size={28} onDark />
                   <div style={{ flex: 1 }}>
-                    <div style={{ color: '#fff', fontSize: 12.5, fontWeight: 700 }}>Atlantica PGA Championship</div>
+                    <div style={{ color: '#fff', fontSize: 12.5, fontWeight: 700 }}>Meridian Championship</div>
                     <div style={{ color: 'rgba(255,255,255,.5)', fontSize: 10.5 }}>Round 3 · Royal Queensland</div>
                   </div>
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, color: '#ff6b60', fontSize: 10, fontWeight: 800, letterSpacing: .5 }}><U.LiveDot />LIVE</span>

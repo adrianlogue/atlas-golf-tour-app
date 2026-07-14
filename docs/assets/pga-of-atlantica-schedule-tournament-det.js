@@ -305,8 +305,8 @@
     const p = D.playerById(params.id);
     if (!p) return null;
     const results = D.recentResults[p.id] || [
-      { t: 'Atlantica PGA Championship', pos: 'T18', toPar: -3, when: 'In progress' },
-      { t: 'Vic Open', pos: 'T24', toPar: -6, when: 'May 2026' },
+      { t: 'Meridian Championship', pos: 'T18', toPar: -3, when: 'In progress' },
+      { t: 'True North Open', pos: 'T24', toPar: -6, when: 'May 2026' },
     ];
     const isFollowing = following.includes(p.id);
     function follow() {
@@ -657,7 +657,7 @@
                 <div style={{ display: 'flex', alignItems: 'center', gap: 9, marginBottom: 6 }}>
                   <I.Ticket size={20} /><span style={{ fontSize: 11, fontWeight: 800, letterSpacing: .8, textTransform: 'uppercase', color: 'rgba(255,255,255,.7)' }}>Open for entry</span>
                 </div>
-                <div style={{ fontFamily: 'var(--serif)', fontSize: 20, fontWeight: 700, lineHeight: 1.15 }}>ISPS HANDA Atlantica Open</div>
+                <div style={{ fontFamily: 'var(--serif)', fontSize: 20, fontWeight: 700, lineHeight: 1.15 }}>The Atlas Open</div>
                 <div style={{ fontSize: 13, color: 'rgba(255,255,255,.78)', marginTop: 4 }}>Entries close 18 Jun · Kingston Heath</div>
               </div>
               <div style={{ padding: 14 }}>
@@ -669,7 +669,7 @@
             <div>
               <U.SectionHeader title="My recent results" />
               <div className="card" style={{ overflow: 'hidden' }}>
-                {[['Atlantica PGA Championship', 'T31', -1, 'In progress'], ['TPS Hunter Valley', 'T12', -6, 'May 2026'], ['The Heritage Classic', 'MC', 4, 'May 2026']].map((r, i, a) => (
+                {[['Meridian Championship', 'T31', -1, 'In progress'], ['Waypoint Series Hunter Valley', 'T12', -6, 'May 2026'], ['The Longitude Classic', 'MC', 4, 'May 2026']].map((r, i, a) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '13px 16px', borderBottom: i < a.length - 1 ? '1px solid var(--divider)' : 'none' }}>
                     <div style={{ width: 40, textAlign: 'center' }}><div style={{ fontSize: 9.5, fontWeight: 700, color: 'var(--muted-2)' }}>POS</div><div className="tabnums" style={{ fontSize: 15, fontWeight: 800 }}>{r[1]}</div></div>
                     <div style={{ flex: 1 }}><div style={{ fontSize: 14, fontWeight: 600 }}>{r[0]}</div><div style={{ fontSize: 12, color: 'var(--muted-2)' }}>{r[3]}</div></div>

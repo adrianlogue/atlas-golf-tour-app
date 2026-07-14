@@ -61,12 +61,12 @@
     if (!row) return null;
     // distribute points across their events as plausible finishes
     const evs = [
-      { t: 'Vic Open', pos: 'T6', pts: 188, when: 'May' },
-      { t: 'The Heritage Classic', pos: 'T3', pts: 264, when: 'May' },
-      { t: 'TPS Hunter Valley', pos: 'T11', pts: 121, when: 'May' },
-      { t: 'TPS Murray River', pos: '1', pts: 500, when: 'Apr' },
-      { t: 'NSW Open', pos: 'T9', pts: 142, when: 'Apr' },
-      { t: 'Heritage Classic Qual', pos: 'T18', pts: 86, when: 'Mar' },
+      { t: 'True North Open', pos: 'T6', pts: 188, when: 'May' },
+      { t: 'The Longitude Classic', pos: 'T3', pts: 264, when: 'May' },
+      { t: 'Waypoint Series Hunter Valley', pos: 'T11', pts: 121, when: 'May' },
+      { t: 'Waypoint Series Murray River', pos: '1', pts: 500, when: 'Apr' },
+      { t: 'Compass Open', pos: 'T9', pts: 142, when: 'Apr' },
+      { t: 'Longitude Classic Qual', pos: 'T18', pts: 86, when: 'Mar' },
     ];
     // scale so it roughly sums to their points
     const sum = evs.reduce((a, e) => a + e.pts, 0);
@@ -86,28 +86,28 @@
 
   // member's season results (with earnings + OoM points per event)
   const memberResults = [
-    { t: 'Atlantica PGA Championship', pos: 'T31', toPar: -1, earnings: 9800, points: 64, when: 'In progress', status: 'live' },
-    { t: 'TPS Hunter Valley', pos: 'T12', toPar: -6, earnings: 7400, points: 121, when: 'May 2026', status: 'done' },
-    { t: 'The Heritage Classic', pos: 'MC', toPar: 4, earnings: 0, points: 0, when: 'May 2026', status: 'done' },
-    { t: 'Vic Open', pos: 'T19', toPar: -7, earnings: 6100, points: 88, when: 'May 2026', status: 'done' },
-    { t: 'TPS Murray River', pos: 'T4', toPar: -12, earnings: 18600, points: 169, when: 'Apr 2026', status: 'done' },
-    { t: 'NSW Open', pos: 'T24', toPar: -3, earnings: 4900, points: 0, when: 'Apr 2026', status: 'done' },
+    { t: 'Meridian Championship', pos: 'T31', toPar: -1, earnings: 9800, points: 64, when: 'In progress', status: 'live' },
+    { t: 'Waypoint Series Hunter Valley', pos: 'T12', toPar: -6, earnings: 7400, points: 121, when: 'May 2026', status: 'done' },
+    { t: 'The Longitude Classic', pos: 'MC', toPar: 4, earnings: 0, points: 0, when: 'May 2026', status: 'done' },
+    { t: 'True North Open', pos: 'T19', toPar: -7, earnings: 6100, points: 88, when: 'May 2026', status: 'done' },
+    { t: 'Waypoint Series Murray River', pos: 'T4', toPar: -12, earnings: 18600, points: 169, when: 'Apr 2026', status: 'done' },
+    { t: 'Compass Open', pos: 'T24', toPar: -3, earnings: 4900, points: 0, when: 'Apr 2026', status: 'done' },
   ];
 
   // member's tournaments (entry status): entered | open | upcoming | played | closed
   const myTournaments = [
-    { id: 't-atlpga', name: 'Fortinet Atlantica PGA Championship', short: 'Atlantica PGA Championship', course: 'Royal Queensland', start: '2026-06-04', end: '2026-06-07', entry: 'entered', note: 'In the field · Round 3', pos: 'T31' },
-    { id: 't-atlopen', name: 'ISPS HANDA Atlantica Open', short: 'Atlantica Open', course: 'Kingston Heath', start: '2026-06-25', end: '2026-06-28', entry: 'open', note: 'Entries close 18 Jun', closes: '2026-06-18' },
-    { id: 't-nzopen', name: 'The New Zealand Open', short: 'New Zealand Open', course: 'Millbrook Resort', start: '2026-07-09', end: '2026-07-12', entry: 'open', note: 'Entries close 02 Jul', closes: '2026-07-02' },
-    { id: 't-webex-syd', name: 'Webex Players Series — Sydney', short: 'Webex Players Series Sydney', course: 'The Hills GC', start: '2026-07-23', end: '2026-07-25', entry: 'upcoming', note: 'Entries open 09 Jul' },
-    { id: 't-tps-hunter', name: 'TPS Hunter Valley', short: 'TPS Hunter Valley', course: 'Cypress Lakes', start: '2026-05-22', end: '2026-05-24', entry: 'played', note: 'Finished T12', pos: 'T12' },
-    { id: 't-heritage', name: 'The Heritage Classic', short: 'Heritage Classic', course: 'Heritage G&CC', start: '2026-05-15', end: '2026-05-17', entry: 'played', note: 'Missed cut', pos: 'MC' },
+    { id: 't-meridian', name: 'The Meridian Championship', short: 'Meridian Championship', course: 'Royal Queensland', start: '2026-06-04', end: '2026-06-07', entry: 'entered', note: 'In the field · Round 3', pos: 'T31' },
+    { id: 't-atlasopen', name: 'The Atlas Open', short: 'Atlas Open', course: 'Kingston Heath', start: '2026-06-25', end: '2026-06-28', entry: 'open', note: 'Entries close 18 Jun', closes: '2026-06-18' },
+    { id: 't-sthcross', name: 'The Southern Cross Open', short: 'Southern Cross Open', course: 'Millbrook Resort', start: '2026-07-09', end: '2026-07-12', entry: 'open', note: 'Entries close 02 Jul', closes: '2026-07-02' },
+    { id: 't-waypoint-syd', name: 'Waypoint Series — Sydney', short: 'Waypoint Series Sydney', course: 'The Hills GC', start: '2026-07-23', end: '2026-07-25', entry: 'upcoming', note: 'Entries open 09 Jul' },
+    { id: 't-waypoint-hunter', name: 'Waypoint Series Hunter Valley', short: 'Waypoint Series Hunter Valley', course: 'Cypress Lakes', start: '2026-05-22', end: '2026-05-24', entry: 'played', note: 'Finished T12', pos: 'T12' },
+    { id: 't-longitude', name: 'The Longitude Classic', short: 'Longitude Classic', course: 'Heritage G&CC', start: '2026-05-15', end: '2026-05-17', entry: 'played', note: 'Missed cut', pos: 'MC' },
   ];
 
   /* ===================== PER-EVENT PLAYER HUB (member view of one event) ===================== */
   // keyed by tournament id; structured like the DPWT player portal
   const eventHub = {
-    't-atlopen': {
+    't-atlasopen': {
       overview: [
         ['Dates', '25–28 June 2026'], ['Venues', 'Kingston Heath GC · Victoria GC'],
         ['Prize money', money(1700000)], ['Field size', '156'],
@@ -164,27 +164,27 @@
   /* ===================== NOTIFICATIONS ===================== */
   // fan notifications
   const fanNotifications = [
-    { id: 'n1', icon: 'Trophy', tone: 'live', title: 'Cole Sutherland leads the Atlantica PGA', body: '−12 through 14 in Round 3', when: '2m ago', unread: true },
+    { id: 'n1', icon: 'Trophy', tone: 'live', title: 'Cole Sutherland leads the Meridian', body: '−12 through 14 in Round 3', when: '2m ago', unread: true },
     { id: 'n2', icon: 'Star', tone: 'green', title: 'Miles Warrick made the turn at −2 today', body: 'Following · Round 3 at Royal Queensland', when: '18m ago', unread: true },
-    { id: 'n3', icon: 'Flag', tone: 'green', title: 'Round 3 tee times published', body: 'Atlantica PGA Championship', when: '3h ago', unread: false },
-    { id: 'n4', icon: 'Calendar', tone: 'muted', title: 'ISPS HANDA Atlantica Open tees off in 3 weeks', body: 'Add it to your calendar', when: 'Yesterday', unread: false },
+    { id: 'n3', icon: 'Flag', tone: 'green', title: 'Round 3 tee times published', body: 'Meridian Championship', when: '3h ago', unread: false },
+    { id: 'n4', icon: 'Calendar', tone: 'muted', title: 'The Atlas Open tees off in 3 weeks', body: 'Add it to your calendar', when: 'Yesterday', unread: false },
   ];
   // member notifications (tournament push to members)
   const memberNotifications = [
-    { id: 'm1', icon: 'Bell', tone: 'gold', title: 'Message from the Tournament Office', body: 'Round 4 tee times are now confirmed. First group 6:45am off the 1st.', when: '12m ago', unread: true, from: 'Atlantica PGA Championship' },
-    { id: 'm2', icon: 'Ticket', tone: 'green', title: 'Entry confirmed', body: 'You’re in the field for the ISPS HANDA Atlantica Open', when: '1h ago', unread: true },
-    { id: 'm3', icon: 'Pin', tone: 'green', title: 'Round 3 pin positions published', body: 'Tap to view the pin sheet', when: '4h ago', unread: false, from: 'Atlantica PGA Championship' },
+    { id: 'm1', icon: 'Bell', tone: 'gold', title: 'Message from the Tournament Office', body: 'Round 4 tee times are now confirmed. First group 6:45am off the 1st.', when: '12m ago', unread: true, from: 'Meridian Championship' },
+    { id: 'm2', icon: 'Ticket', tone: 'green', title: 'Entry confirmed', body: 'You’re in the field for the The Atlas Open', when: '1h ago', unread: true },
+    { id: 'm3', icon: 'Pin', tone: 'green', title: 'Round 3 pin positions published', body: 'Tap to view the pin sheet', when: '4h ago', unread: false, from: 'Meridian Championship' },
     { id: 'm4', icon: 'Wallet', tone: 'muted', title: 'Membership invoice due 15 July', body: 'INV-2026-1183 · ' + money(1450), when: 'Yesterday', unread: false },
   ];
 
   /* ===================== PAST CHAMPIONS (event pages) ===================== */
   const pastChampions = {
-    't-atlpga': [
+    't-meridian': [
       { year: '2025', name: 'Miles Warrick', score: '−18' }, { year: '2024', name: 'Errol Swift', score: '−14' },
       { year: '2023', name: 'Miles Warrick', score: '−9' }, { year: '2022', name: 'Jed Marsh', score: '−20' },
       { year: '2021', name: 'Jediah Marsh', score: '−11' },
     ],
-    't-atlopen': [
+    't-atlasopen': [
       { year: '2025', name: 'Rory Finch', score: '−16' }, { year: '2024', name: 'Jack Dunmore', score: '−8' },
       { year: '2023', name: 'Tomás Herrera', score: '−24' }, { year: '2022', name: 'Stefan Kowalski', score: '−14' },
     ],
